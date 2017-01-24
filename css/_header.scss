@@ -1,0 +1,207 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+header{
+  overflow: hidden;
+  @include padding;
+  background: rgba(255, 255, 255, .5);
+  padding-bottom: 5px;
+  box-sizing: border-box;
+  .navmain{
+    .exhlogo{
+      height: 125px;
+      object-fit: contain;
+    }
+  }
+}
+
+.social{
+  padding-top: 5px;
+  text-align: right;
+  .fa{
+    text-align: center;
+    font-size: 18px;
+    width: 25px;
+    padding: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+    background: $medgray;
+    color: white;
+  }
+}
+
+.mainlogo{
+  text-align: right;
+  padding-top: 5px;
+  img{
+    height: 20px;
+    object-fit: contain;
+    vertical-align: middle;
+  }
+  a{
+    text-decoration: none;
+    font-weight: bold;
+    color: $darkgray;
+  }
+}
+
+.exhnav{
+  text-align: right;
+  ul{
+    margin-bottom: 5px;
+    .fa{
+      display: none;
+    }
+  }
+  li{
+    display: inline-block;
+    padding-top: 35px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+    a{
+      font-size: 30px;
+      color: $darkgray;
+      position: relative;
+    }
+  }
+}
+
+.exhnav li a::after{
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -5;
+  height: 0px;
+  width: 100%;
+  background-color: $purple;
+  transition: height .3s;
+  content: "";
+}
+
+.exhnav li a:hover{
+  color: $purple;
+}
+
+.exhnav li a:hover::after{
+  height: 7px;
+}
+
+.social .fa:hover{
+  background: $teal;
+}
+
+// mobile
+@media (max-width: 767px){
+
+  header{
+    margin: 0px;
+    padding: 5px;
+    height: auto;
+    .navmain{
+      .four.columns{
+        width: 40%;
+      }
+      .exhlogo{
+        height: 75px;
+        img{
+          height: 75px;
+        }
+      }
+    }
+  }
+
+  .social{
+    display: none;
+  }
+
+.eight.columns{
+  width: 60%;
+  margin-left: 0px;
+}
+
+  .exhnav{
+    ul{
+      margin: 0px;
+      .fa{
+        padding-top: 5px;
+        font-size: 35px;
+        display: block;
+      }
+      li{
+        list-style: none;
+        text-align: right;
+        display: block;
+        display: none;
+        padding: 10px 10px 0px 0px;
+        line-height: 10px;
+        a{
+          font-size: 24px;
+          color: $darkgray;
+          position: relative;
+        }
+      }
+    }
+  }
+
+  .exhnav li a::after{
+    display: none;
+  }
+
+}
+
+
+// tablet
+@media(min-width: 768px) and (max-width: 1256px){
+
+  header{
+    margin: 0px;
+    padding: 5px;
+    height: auto;
+    .navmain{
+      .four.columns{
+        width: 40%;
+        margin-left: 0px;
+      }
+      .exhlogo{
+        height: 100px;
+        img{
+          height: 100px;
+        }
+      }
+    }
+  }
+
+  .eight.columns{
+    width: 60%;
+    margin-left: 0px;
+  }
+
+  .exhnav{
+    ul{
+      margin: 0px;
+      .fa{
+        padding-top: 5px;
+        font-size: 35px;
+        display: block;
+      }
+      li{
+        display: block;
+        list-style: none;
+        text-align: right;
+        display: none;
+        padding: 10px 10px 0px 0px;
+        line-height: 10px;
+        a{
+          font-size: 24px;
+          color: $darkgray;
+          position: relative;
+        }
+      }
+    }
+  }
+
+  .exhnav li a::after{
+    display: none;
+  }
+
+}

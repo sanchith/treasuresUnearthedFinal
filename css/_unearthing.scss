@@ -1,0 +1,238 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  z-index: 100;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+}
+
+.unearth-bg-img {
+  height: 630px;
+  background-image: url("../images/unearthing-hero.png");
+  background-size: cover;
+  object-fit: contain;
+}
+
+.unearth-hero-text {
+  color: #231f20;
+  background-color: rgba(255, 255, 255, .6);
+  width: 400px;
+  padding: 2%;
+  position: relative;
+  top: 40%;
+  left: 55%;
+  h4 {
+    text-align: center;
+    font-weight: 400;
+  }
+  hr, p {
+    margin: 0;
+    text-align: center;
+  }
+  hr {
+    border: 1px solid #231f20;
+  }
+}
+
+.what {
+  background-color: #eaebec;
+    .what-text {
+      margin: 10% 0;
+      margin-left: 18%;
+      margin-right: 7%;
+      position: relative;
+    }
+  .col-right{
+      margin-left: 1%;
+      .what-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 60px;
+        // padding-left: 30px;
+        padding-right: 100px;
+        padding-top: 65px;
+        img {
+          border: 1px solid #eaebec;
+        }
+      }
+    }
+}
+
+.how {
+  background-color: white;
+  .how-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    padding-right: 0;
+    padding-left: 100px;
+    padding-top: 110px;
+    img {
+      height: 300px;
+      width: 350px;
+      border: 1px solid #eaebec;
+    }
+  }
+  .how-text {
+    margin-top: 6%;
+    margin-right: 17%;
+    margin-left: 5%;
+    position: relative;
+    .bold-text{
+      font-size: 25px;
+    }
+  }
+}
+
+.where {
+  background-color: #eaebec;
+    .where-text {
+      margin: 10% 0;
+      margin-left: 18%;
+      margin-right: 5%;
+      position: relative;
+    }
+  .where-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    padding-left: 0;
+    padding-right: 100px;
+    img {
+      border: 1px solid #eaebec;
+    }
+  }
+}
+
+.videos {
+  background-color: white;
+  .videos-img {
+    margin: 3% 0;
+    margin-left: 12%;
+    video {
+      height: 300px;
+      width: 350px;
+      margin: 2%;
+      margin-top: 4%;
+    }
+  }
+  .right-col {
+    margin-left: 0;
+    .video-text {
+      margin-top: 30%;
+      margin-right: 20%;
+      margin-left: 0;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .unearth-hero-text {
+    left: 0;
+    top: 50%;
+  }
+
+  .what {
+      .what-text {
+        margin: 8% 10%;
+      }
+      .col-right{
+          margin-left: 1%;
+          .what-img {
+            img {
+              height: 250px;
+              width: 300px;
+            }
+          }
+      }
+  }
+
+  .how {
+    .how-img {
+      padding-top: 200px;
+      img {
+        height: 250px;
+        width: 300px;
+      }
+    }
+    .how-text {
+      margin: 8% 10%;
+    }
+  }
+
+  .where {
+      .where-text {
+        margin: 8% 10%;
+      }
+    .where-img {
+        img {
+          height: 250px;
+          width: 300px;
+        }
+      }
+    }
+}
+
+@media (max-width: 767px) {
+  .unearth-hero-text {
+    left: 0;
+    top: 50%;
+  }
+
+  .what-column {
+    width: 100%;
+  }
+
+  .what {
+      .what-text {
+        margin: 8% 10%;
+      }
+      .col-right{
+          margin-left: 1%;
+          .what-img {
+            display: none;
+          }
+      }
+  }
+
+  .how {
+    .how-img {
+      display: none;
+    }
+    .how-text {
+      margin: 8% 10%;
+    }
+  }
+
+  .where {
+      .where-text {
+        margin: 8% 10%;
+      }
+    .where-img {
+        display: none;
+      }
+    }
+
+    .videos {
+      .videos-img {
+        margin-left: 5%;
+      }
+      .right-col {
+        // margin-left: 0;
+        .video-text {
+          margin-top: 5%;
+          margin-right: 10%;
+          margin-left: 10%;
+        }
+      }
+    }
+}

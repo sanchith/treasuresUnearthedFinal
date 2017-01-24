@@ -1,0 +1,248 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+button{
+  border-radius: 0px;
+}
+
+.mainmap{
+  height: 714px;
+  position: absolute;
+  top: 170px;
+  img{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+  }
+  .textbox{
+    display: block;
+    position: absolute;
+    top: 40%;
+    right: 15%;
+    height: 230px;
+    width: 300px;
+    background: $lightgraytrans;
+    color: $darkgray;
+    padding: 10px;
+  }
+  button{
+    display: none;
+  }
+}
+
+.dot{
+  .fa{
+    color: $purple;
+    font-size: 35px;
+  }
+}
+
+.northamerdot{
+  position: absolute;
+  top: 25%;
+  left: 15%;
+}
+
+.southamerdot{
+  position: absolute;
+  top: 63%;
+  left: 25%;
+}
+
+.europedot{
+  position: absolute;
+  top: 19%;
+  left: 49%;
+}
+
+.africadot{
+  position: absolute;
+  top: 44%;
+  left: 48%;
+}
+
+.asiadot{
+  position: absolute;
+  top: 30%;
+  right: 25%;
+}
+
+.australiadot{
+  position: absolute;
+  top: 75%;
+  right: 10%;
+}
+
+.continent{
+  height: 650px;
+  width: 95%;
+  background: white;
+  margin: 0 auto;
+  padding: 0px;
+  border: 3px solid $purple;
+  box-sizing: border-box;
+  position: relative;
+  top: 170px;
+  z-index: 100;
+  h5{
+    text-align: right;
+    margin-bottom: 0px;
+    a{
+      text-align: right;
+      text-decoration: none;
+      padding-right: 7px;
+      color: $darkgray;
+    }
+  }
+}
+
+.continent h5 a:hover{
+  color: $purple;
+  text-decoration: underline;
+}
+
+.contmap{
+  height: 600px;
+  text-align: center;
+  img{
+    height: 575px;
+    object-fit: contain;
+  }
+}
+
+.mineralpics{
+  height: 625px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  div {
+    @include verticalalign;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    display: inline-block;
+    display: none;
+    img{
+      height: 400px;
+      object-fit: contain;
+      text-align: center;
+      margin: 0px;
+      padding: 0px;
+    }
+    p{
+      font-size: 24px;
+    }
+  }
+}
+
+
+// mobile
+@media (max-width: 767px){
+
+  .mainmap{
+    position: static;
+    padding-top: 125px;
+    height: auto;
+    img{
+      display: none;
+    }
+    .textbox{
+      display: none;
+    }
+    button{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 250px;
+      border: 1px solid $purple;
+    }
+  }
+
+  .dot{
+    display: none;
+  }
+
+  .continent{
+    height: auto;
+    h5{
+      text-align: center;
+      a{
+        text-align: center;
+      }
+    }
+  }
+
+  .contmap{
+    height: auto;
+    img{
+      width: 95%;
+      height: auto;
+    }
+  }
+
+  .mineralpics{
+    height: 450px;
+    div{
+      img{
+        height: auto;
+        width: 95%;
+      }
+    }
+  }
+
+}
+
+// tablet
+@media(min-width: 768px) and (max-width: 1256px){
+
+    .mainmap{
+      position: static;
+      padding-top: 125px;
+      height: auto;
+      text-align: center;
+      img{
+        display: none;
+      }
+      .textbox{
+        display: none;
+      }
+      button{
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 250px;
+        border: 1px solid $purple;
+      }
+    }
+
+    .dot{
+      display: none;
+    }
+
+    .continent{
+      height: auto;
+    }
+
+    .contmap{
+      height: auto;
+      width: 40%;
+      img{
+        width: 95%;
+        height: auto;
+      }
+    }
+
+    .mineralpics{
+      height: 450px;
+      width: 60%;
+      div{
+        img{
+          height: auto;
+          width: 75%;
+        }
+      }
+    }
+
+}

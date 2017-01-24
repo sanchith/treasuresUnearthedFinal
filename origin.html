@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Treasures Unearthed - Origin | North Carolina Museum of Natural Sciences</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton_origin.css">
+  <script src="https://use.fontawesome.com/a8ba1f1ed8.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns">
+          <div id="header"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- world map -->
+  <div class="row mainmap">
+    <img src="images/maps/worldmap3.png" alt="world map">
+
+    <div class="textbox">
+      <h4>About the Map</h4>
+      <p>
+        Click on the dot on a continent. A detailed map and slide show will load. Watch the slide show to discover the minerals mined on that continent. Click Close to return to the main map.
+      </p>
+    </div>
+
+    <button class="northamerbutton">North America</button>
+    <button class="southamerbutton">South America</button>
+    <button class="europebutton">Europe</button>
+    <button class="africabutton">Africa</button>
+    <button class="asiabutton">Asia</button>
+    <button class="australiabutton">Australia</button>
+
+    <!-- continent map circles for jQuery clicks -->
+    <div class="dot northamerdot"><i class="fa fa-circle" aria-hidden="true"></i></div>
+    <div class="dot southamerdot"><i class="fa fa-circle" aria-hidden="true"></i></div>
+    <div class="dot europedot"><i class="fa fa-circle" aria-hidden="true"></i></div>
+    <div class="dot africadot"><i class="fa fa-circle" aria-hidden="true"></i></div>
+    <div class="dot asiadot"><i class="fa fa-circle" aria-hidden="true"></i></div>
+    <div class="dot australiadot"><i class="fa fa-circle" aria-hidden="true"></i></div>
+
+  </div>
+
+<!-- north america map and minerals -->
+  <div class="row continent northamer">
+    <h5 class="slideclose"><a href="#">close</a></h5>
+    <div class="five columns contmap">
+      <img src="images/maps/northamerica.jpg" alt="north america map">
+    </div>
+    <div class="seven columns mineralpics">
+      <div style="display: inline-block;"><img src="images/mapminerals/agate.jpg" alt="Agate"><p>Agate</p></div>
+      <div><img src="images/mapminerals/aluminum.jpg" alt="Aluminum"><p>Aluminum</p></div>
+      <div><img src="images/mapminerals/amethyst.jpg" alt="Amethyst"><p>Amethyst</p></div>
+      <div><img src="images/mapminerals/antimony.jpg" alt="Antimony"><p>Antimony</p></div>
+      <div><img src="images/mapminerals/aquamarine.jpg" alt="Aquamarine"><p>Aquamarine</p></div>
+      <div><img src="images/mapminerals/asbestos.jpg" alt="Asbestos"><p>Asbestos</p></div>
+      <div><img src="images/mapminerals/barite.jpg" alt="Barite"><p>Barite</p></div>
+      <div><img src="images/mapminerals/benitoite.jpg" alt="Benitoite"><p>Benitoite</p></div>
+      <div><img src="images/mapminerals/beryllium.jpg" alt="Beryllium"><p>Beryllium</p></div>
+      <div><img src="images/mapminerals/bismuth.jpg" alt="Bismuth"><p>Bismuth</p></div>
+      <div><img src="images/mapminerals/boron.jpg" alt="Boron"><p>Boron</p></div>
+      <div><img src="images/mapminerals/bromine.jpg" alt="Bromine"><p>Bromine</p></div>
+      <div><img src="images/mapminerals/cadmium.jpg" alt="Cadmium"><p>Cadmium</p></div>
+      <div><img src="images/mapminerals/chromium.jpg" alt="Chromium"><p>Chromium</p></div>
+      <div><img src="images/mapminerals/coal.jpg" alt="Coal"><p>Coal</p></div>
+      <div><img src="images/mapminerals/cobalt.jpg" alt="Cobalt"><p>Cobalt</p></div>
+      <div><img src="images/mapminerals/copper.jpg" alt="Copper"><p>Copper</p></div>
+      <div><img src="images/mapminerals/diamond.jpg" alt="Diamond"><p>Diamond</p></div>
+      <div><img src="images/mapminerals/diatomite.jpg" alt="Diatomite"><p>Diatomite</p></div>
+      <div><img src="images/mapminerals/emerald.jpg" alt="Emerald"><p>Emerald</p></div>
+      <div><img src="images/mapminerals/feldspar.jpg" alt="Feldspar"><p>Feldspar</p></div>
+      <div><img src="images/mapminerals/garnet.jpg" alt="Garnet"><p>Garnet</p></div>
+      <div><img src="images/mapminerals/gold.jpg" alt="Gold"><p>Gold</p></div>
+      <div><img src="images/mapminerals/gypsum.jpg" alt="Gypsum"><p>Gypsum</p></div>
+      <div><img src="images/mapminerals/iodine.jpg" alt="Iodine"><p>Iodine</p></div>
+      <div><img src="images/mapminerals/iron.jpg" alt="Iron"><p>Iron</p></div>
+      <div><img src="images/mapminerals/jade.jpg" alt="Jade"><p>Jade</p></div>
+      <div><img src="images/mapminerals/jasper.jpg" alt="Jasper"><p>Jasper</p></div>
+      <div><img src="images/mapminerals/kaolin.jpg" alt="Kaolin"><p>Kaolin</p></div>
+      <div><img src="images/mapminerals/kyanite.jpg" alt="Kyanite"><p>Kyanite</p></div>
+      <div><img src="images/mapminerals/lapislazuli.jpg" alt="Lapis Lazuli"><p>Lapis Lazuli</p></div>
+      <div><img src="images/mapminerals/lead.jpg" alt="Lead"><p>Lead</p></div>
+      <div><img src="images/mapminerals/lime.jpg" alt="Lime"><p>Lime</p></div>
+      <div><img src="images/mapminerals/lithium.jpg" alt="Lithium"><p>Lithium</p></div>
+      <div><img src="images/mapminerals/magnesite.jpg" alt="Magnesite"><p>Magnesite</p></div>
+      <div><img src="images/mapminerals/mercury.jpg" alt="Mercury"><p>Mercury</p></div>
+      <div><img src="images/mapminerals/mica.jpg" alt="Mica"><p>Mica</p></div>
+      <div><img src="images/mapminerals/molybdenum.jpg" alt="Molybdenum"><p>Molybdenum</p></div>
+      <div><img src="images/mapminerals/nickel.jpg" alt="Nickel"><p>Nickel</p></div>
+      <div><img src="images/mapminerals/niobium.jpg" alt="Niobium"><p>Niobium</p></div>
+      <div><img src="images/mapminerals/obsidian.jpg" alt="Obsidian"><p>Obsidian</p></div>
+      <div><img src="images/mapminerals/olivine.jpg" alt="Olivine"><p>Olivine</p></div>
+      <div><img src="images/mapminerals/opal.jpg" alt="Opal"><p>Opal</p></div>
+      <div><img src="images/mapminerals/peridot.jpg" alt="Peridot"><p>Peridot</p></div>
+      <div><img src="images/mapminerals/perlite.jpg" alt="Perlite"><p>Perlite</p></div>
+      <div><img src="images/mapminerals/phosphate.jpg" alt="Phosphate"><p>Phosphate</p></div>
+      <div><img src="images/mapminerals/platinum.jpg" alt="Platinum"><p>Platinum</p></div>
+      <div><img src="images/mapminerals/potash.jpg" alt="Potash"><p>Potash</p></div>
+      <div><img src="images/mapminerals/pyrophyllite.jpg" alt="Pyrophyllite"><p>Pyrophyllite</p></div>
+      <div><img src="images/mapminerals/quartz.jpg" alt="Quartz"><p>Quartz</p></div>
+      <div><img src="images/mapminerals/rhenium.jpg" alt="Rhenium"><p>Rhenium</p></div>
+      <div><img src="images/mapminerals/rhodochrosite.jpg" alt="Rhodochrosite"><p>Rhodochrosite</p></div>
+      <div><img src="images/mapminerals/ruby.jpg" alt="Ruby"><p>Ruby</p></div>
+      <div><img src="images/mapminerals/saphire.jpg" alt="Saphire"><p>Saphire</p></div>
+      <div><img src="images/mapminerals/selenium.jpg" alt="Selenium"><p>Selenium</p></div>
+      <div><img src="images/mapminerals/silicon.jpg" alt="Silicon"><p>Silicon</p></div>
+      <div><img src="images/mapminerals/strontium.jpg" alt="Strontium"><p>Strontium</p></div>
+      <div><img src="images/mapminerals/sulfer.jpg" alt="Sulfer"><p>Sulfer</p></div>
+      <div><img src="images/mapminerals/talc.jpg" alt="Talc"><p>Talc</p></div>
+      <div><img src="images/mapminerals/tellurium.jpg" alt="Tellurium"><p>Tellurium</p></div>
+      <div><img src="images/mapminerals/thorium.jpg" alt="Thorium"><p>Thorium</p></div>
+      <div><img src="images/mapminerals/titanium.jpg" alt="Titanium"><p>Titanium</p></div>
+      <div><img src="images/mapminerals/topaz.jpg" alt="Topaz"><p>Topaz</p></div>
+      <div><img src="images/mapminerals/tourmaline.jpg" alt="Tourmaline"><p>Tourmaline</p></div>
+      <div><img src="images/mapminerals/trona.jpg" alt="Trona"><p>Trona</p></div>
+      <div><img src="images/mapminerals/tungsten.jpg" alt="Tungsten"><p>Tungsten</p></div>
+      <div><img src="images/mapminerals/turquoise.jpg" alt="Turquoise"><p>Turquoise</p></div>
+      <div><img src="images/mapminerals/vanadium.jpg" alt="Vanadium"><p>Vanadium</p></div>
+      <div><img src="images/mapminerals/wollastonite.jpg" alt="Wollastonite"><p>Wollastonite</p></div>
+      <div><img src="images/mapminerals/zeolite.jpg" alt="Zeolite"><p>Zeolite</p></div>
+      <div><img src="images/mapminerals/zinc.jpg" alt="Zinc"><p>Zinc</p></div>
+      <div><img src="images/mapminerals/zircon.jpg" alt="Zircon"><p>Zircon</p></div>
+    </div>
+  </div>
+<!-- south america map and minerals -->
+  <div class="row continent southamer">
+    <h5 class="slideclose"><a href="#">close</a></h5>
+    <div class="five columns contmap">
+      <img src="images/maps/southamerica.jpg" alt="south america map">
+    </div>
+    <div class="seven columns">
+      <div class="mineralpics">
+        <div style="display: inline-block;"><img src="images/mapminerals/alexandrite.jpg" alt="Alexandrite"><p>Alexandrite</p></div>
+        <div><img src="images/mapminerals/aluminum.jpg" alt="Aluminum"><p>Aluminum</p></div>
+        <div><img src="images/mapminerals/amethyst.jpg" alt="Amethyst"><p>Amethyst</p></div>
+        <div><img src="images/mapminerals/brazilianite.jpg" alt="Brazilianite"><p>Brazilianite</p></div>
+        <div><img src="images/mapminerals/chrysoberyl.jpg" alt="Chrysoberyl"><p>Chrysoberyl</p></div>
+        <div><img src="images/mapminerals/citrine.jpg" alt="Citrine"><p>Citrine</p></div>
+        <div><img src="images/mapminerals/copper.jpg" alt="Copper"><p>Copper</p></div>
+        <div><img src="images/mapminerals/emerald.jpg" alt="Emerald"><p>Emerald</p></div>
+        <div><img src="images/mapminerals/fluorite.jpg" alt="Fluorite"><p>Fluorite</p></div>
+        <div><img src="images/mapminerals/garnet.jpg" alt="Garnet"><p>Garnet</p></div>
+        <div><img src="images/mapminerals/hematite.jpg" alt="Hematite"><p>Hematite</p></div>
+        <div><img src="images/mapminerals/iron.jpg" alt="Iron"><p>Iron</p></div>
+        <div><img src="images/mapminerals/lapislazuli.jpg" alt="Lapis Lazuli"><p>Lapis Lazuli</p></div>
+        <div><img src="images/mapminerals/lead.jpg" alt="Lead"><p>Lead</p></div>
+        <div><img src="images/mapminerals/proustite.jpg" alt="Proustite"><p>Proustite</p></div>
+        <div><img src="images/mapminerals/quartz.jpg" alt="Quartz"><p>Quartz</p></div>
+        <div><img src="images/mapminerals/silver.jpg" alt="Silver"><p>Silver</p></div>
+        <div><img src="images/mapminerals/topaz.jpg" alt="Topaz"><p>Topaz</p></div>
+        <div><img src="images/mapminerals/tourmaline.jpg" alt="Tourmaline"><p>Tourmaline</p></div>
+        <div><img src="images/mapminerals/uranocircite.jpg" alt="Uranocircite"><p>Uranocircite</p></div>
+        <div><img src="images/mapminerals/zinc.jpg" alt="Zinc"><p>Zinc</p></div>
+      </div>
+    </div>
+  </div>
+<!-- europe map and minerals -->
+  <div class="row continent europe">
+    <h5 class="slideclose"><a href="#">close</a></h5>
+    <div class="six columns contmap">
+      <img src="images/maps/europe.jpg" alt="europe map">
+    </div>
+    <div class="six columns mineralpics">
+      <div style="display: inline-block;"><img src="images/mapminerals/antimony.jpg" alt="Antimony"><p>Antimony</p></div>
+      <div><img src="images/mapminerals/asbestos.jpg" alt="Asbestos"><p>Asbestos</p></div>
+      <div><img src="images/mapminerals/barytes.jpg" alt="Barytes"><p>Barytes</p></div>
+      <div><img src="images/mapminerals/bauxite.jpg" alt="Bauxite"><p>Bauxite</p></div>
+      <div><img src="images/mapminerals/bentonite.jpg" alt="Bentonite"><p>Bentonite</p></div>
+      <div><img src="images/mapminerals/chromium.jpg" alt="Chromium"><p>Chromium</p></div>
+      <div><img src="images/mapminerals/coal.jpg" alt="Coal"><p>Coal</p></div>
+      <div><img src="images/mapminerals/copper.jpg" alt="Copper"><p>Copper</p></div>
+      <div><img src="images/mapminerals/diatomite.jpg" alt="Diatomite"><p>Diatomite</p></div>
+      <div><img src="images/mapminerals/feldspar.jpg" alt="Feldspar"><p>Feldspar</p></div>
+      <div><img src="images/mapminerals/fluorspar.jpg" alt="Fluorspar"><p>Fluorspar</p></div>
+      <div><img src="images/mapminerals/gold.jpg" alt="Gold"><p>Gold</p></div>
+      <div><img src="images/mapminerals/gypsum.jpg" alt="Gypsum"><p>Gypsum</p></div>
+      <div><img src="images/mapminerals/iron.jpg" alt="Iron"><p>Iron</p></div>
+      <div><img src="images/mapminerals/kaolin.jpg" alt="Kaolin"><p>Kaolin</p></div>
+      <div><img src="images/mapminerals/lead.jpg" alt="Lead"><p>Lead</p></div>
+      <div><img src="images/mapminerals/magnesite.jpg" alt="Magnesite"><p>Magnesite</p></div>
+      <div><img src="images/mapminerals/manganese.jpg" alt="Manganese"><p>Manganese</p></div>
+      <div><img src="images/mapminerals/mica.jpg" alt="Mica"><p>Mica</p></div>
+      <div><img src="images/mapminerals/nickel.jpg" alt="Nickel"><p>Nickel</p></div>
+      <div><img src="images/mapminerals/perlite.jpg" alt="Perlite"><p>Perlite</p></div>
+      <div><img src="images/mapminerals/potash.jpg" alt="Potash"><p>Potash</p></div>
+      <div><img src="images/mapminerals/silver.jpg" alt="Silver"><p>Silver</p></div>
+      <div><img src="images/mapminerals/sulfer.jpg" alt="Sulfer"><p>Sulfer</p></div>
+      <div><img src="images/mapminerals/talc.jpg" alt="Talc"><p>Talc</p></div>
+      <div><img src="images/mapminerals/titanium.jpg" alt="Titanium"><p>Titanium</p></div>
+      <div><img src="images/mapminerals/tungsten.jpg" alt="Tungsten"><p>Tungsten</p></div>
+      <div><img src="images/mapminerals/uranium.jpg" alt="Uranium"><p>Uranium</p></div>
+      <div><img src="images/mapminerals/zinc.jpg" alt="Zinc"><p>Zinc</p></div>
+    </div>
+  </div>
+<!-- africa map and minerals -->
+  <div class="row continent africa">
+    <h5 class="slideclose"><a href="#">close</a></h5>
+    <div class="five columns contmap">
+      <img src="images/maps/africa.jpg" alt="africa map">
+    </div>
+    <div class="seven columns mineralpics">
+      <div style="display: inline-block;"><img src="images/mapminerals/aluminum.jpg" alt="Aluminum"><p>Aluminum</p></div>
+      <div><img src="images/mapminerals/andalusite.jpg" alt="Andalusite"><p>Andalusite</p></div>
+      <div><img src="images/mapminerals/apatite.jpg" alt="Apatite"><p>Apatite</p></div>
+      <div><img src="images/mapminerals/aquamarine.jpg" alt="Aquamarine"><p>Aquamarine</p></div>
+      <div><img src="images/mapminerals/asbestos.jpg" alt="Asbestos"><p>Asbestos</p></div>
+      <div><img src="images/mapminerals/bauxite.jpg" alt="Bauxite"><p>Bauxite</p></div>
+      <div><img src="images/mapminerals/chromium.jpg" alt="Chromium"><p>Chromium</p></div>
+      <div><img src="images/mapminerals/chrysoberyl.jpg" alt="Chrysoberyl"><p>Chrysoberyl</p></div>
+      <div><img src="images/mapminerals/citrine.jpg" alt="Citrine"><p>Citrine</p></div>
+      <div><img src="images/mapminerals/coal.jpg" alt="Coal"><p>Coal</p></div>
+      <div><img src="images/mapminerals/cobalt.jpg" alt="Cobalt"><p>Cobalt</p></div>
+      <div><img src="images/mapminerals/copper.jpg" alt="Copper"><p>Copper</p></div>
+      <div><img src="images/mapminerals/diamond.jpg" alt="Diamond"><p>Diamond</p></div>
+      <div><img src="images/mapminerals/garnet.jpg" alt="Garnet"><p>Garnet</p></div>
+      <div><img src="images/mapminerals/gold.jpg" alt="Gold"><p>Gold</p></div>
+      <div><img src="images/mapminerals/iolite.jpg" alt="Iolite"><p>Iolite</p></div>
+      <div><img src="images/mapminerals/iron.jpg" alt="Iron"><p>Iron</p></div>
+      <div><img src="images/mapminerals/kyanite.jpg" alt="Kyanite"><p>Kyanite</p></div>
+      <div><img src="images/mapminerals/lead.jpg" alt="Lead"><p>Lead</p></div>
+      <div><img src="images/mapminerals/nickel.jpg" alt="Nickel"><p>Nickel</p></div>
+      <div><img src="images/mapminerals/phosphate.jpg" alt="Phosphate"><p>Phosphate</p></div>
+      <div><img src="images/mapminerals/platinum.jpg" alt="Platinum"><p>Platinum</p></div>
+      <div><img src="images/mapminerals/pyrope.jpg" alt="Pyrope"><p>Pyrope</p></div>
+      <div><img src="images/mapminerals/rhodolite.jpg" alt="Rhodolite"><p>Rhodolite</p></div>
+      <div><img src="images/mapminerals/ruby.jpg" alt="Ruby"><p>Ruby</p></div>
+      <div><img src="images/mapminerals/saphire.jpg" alt="Saphire"><p>Saphire</p></div>
+      <div><img src="images/mapminerals/spessartite.jpg" alt="Spessartite"><p>Spessartite</p></div>
+      <div><img src="images/mapminerals/spinel.jpg" alt="Spinel"><p>Sipnel</p></div>
+      <div><img src="images/mapminerals/tanzanite.jpg" alt="Tanzanite"><p>Tanzanite</p></div>
+      <div><img src="images/mapminerals/topaz.jpg" alt="Topaz"><p>Topaz</p></div>
+      <div><img src="images/mapminerals/tourmaline.jpg" alt="Tourmaline"><p>Tourmaline</p></div>
+      <div><img src="images/mapminerals/uranium.jpg" alt="Uranium"><p>Uranium</p></div>
+      <div><img src="images/mapminerals/vanadium.jpg" alt="Vanadium"><p>Vanadium</p></div>
+      <div><img src="images/mapminerals/zinc.jpg" alt="Zinc"><p>Zinc</p></div>
+      <div><img src="images/mapminerals/zircon.jpg" alt="Zircon"><p>Zircon</p></div>
+    </div>
+  </div>
+<!-- asia map and minerals -->
+  <div class="row continent asia">
+    <h5 class="slideclose"><a href="#">close</a></h5>
+    <div class="six columns contmap">
+      <img src="images/maps/asia.jpg" alt="asia map">
+    </div>
+    <div class="six columns mineralpics">
+      <div style="display: inline-block;"><img src="images/mapminerals/agate.jpg" alt="Agate"><p>Agate</p></div>
+      <div><img src="images/mapminerals/aluminum.jpg" alt="Aluminum"><p>Aluminum</p></div>
+      <div><img src="images/mapminerals/antimony.jpg" alt="Antimony"><p>Antimony</p></div>
+      <div><img src="images/mapminerals/aquamarine.jpg" alt="Aquamarine"><p>Aquamarine</p></div>
+      <div><img src="images/mapminerals/asbestos.jpg" alt="Asbestos"><p>Asbestos</p></div>
+      <div><img src="images/mapminerals/barite.jpg" alt="Barite"><p>Barite</p></div>
+      <div><img src="images/mapminerals/bauxite.jpg" alt="Bauxite"><p>Bauxite</p></div>
+      <div><img src="images/mapminerals/charoite.jpg" alt="Charoite"><p>Charoite</p></div>
+      <div><img src="images/mapminerals/chromium.jpg" alt="Chromium"><p>Chromium</p></div>
+      <div><img src="images/mapminerals/chrysoberyl.jpg" alt="Chrysoberyl"><p>Chrysoberyl</p></div>
+      <div><img src="images/mapminerals/clinohumite.jpg" alt="Clinohumite"><p>Clinohumite</p></div>
+      <div><img src="images/mapminerals/coal.jpg" alt="Coal"><p>Coal</p></div>
+      <div><img src="images/mapminerals/copper.jpg" alt="Copper"><p>Copper</p></div>
+      <div><img src="images/mapminerals/diamond.jpg" alt="Diamond"><p>Diamond</p></div>
+      <div><img src="images/mapminerals/emerald.jpg" alt="Emerald"><p>Emerald</p></div>
+      <div><img src="images/mapminerals/garnet.jpg" alt="Garnet"><p>Garnet</p></div>
+      <div><img src="images/mapminerals/gold.jpg" alt="Gold"><p>Gold</p></div>
+      <div><img src="images/mapminerals/goshenite.jpg" alt="Goshenite"><p>Goshenite</p></div>
+      <div><img src="images/mapminerals/gypsum.jpg" alt="Gypsum"><p>Gypsum</p></div>
+      <div><img src="images/mapminerals/iron.jpg" alt="Iron"><p>Iron</p></div>
+      <div><img src="images/mapminerals/kunzite.jpg" alt="Kunzite"><p>Kunzite</p></div>
+      <div><img src="images/mapminerals/lapislazuli.jpg" alt="Lapis Lazuli"><p>Lapis Lazuli</p></div>
+      <div><img src="images/mapminerals/lead.jpg" alt="Lead"><p>Lead</p></div>
+      <div><img src="images/mapminerals/malachite.jpg" alt="Malachite"><p>Malachite</p></div>
+      <div><img src="images/mapminerals/manganese.jpg" alt="Manganese"><p>Manganese</p></div>
+      <div><img src="images/mapminerals/mica.jpg" alt="Mica"><p>Mica</p></div>
+      <div><img src="images/mapminerals/moonstone.jpg" alt="Moonstone"><p>Moonstone</p></div>
+      <div><img src="images/mapminerals/morganite.jpg" alt="Morganite"><p>Morganite</p></div>
+      <div><img src="images/mapminerals/nickel.jpg" alt="Nickel"><p>Nickel</p></div>
+      <div><img src="images/mapminerals/peridot.jpg" alt="Peridot"><p>Peridot</p></div>
+      <div><img src="images/mapminerals/phosphate.jpg" alt="Phosphate"><p>Phosphate</p></div>
+      <div><img src="images/mapminerals/quartz.jpg" alt="Quartz"><p>Quartz</p></div>
+      <div><img src="images/mapminerals/rhodonoite.jpg" alt="Rhodonoite"><p>Rhodonoite</p></div>
+      <div><img src="images/mapminerals/ruby.jpg" alt="Ruby"><p>Ruby</p></div>
+      <div><img src="images/mapminerals/saphire.jpg" alt="Saphire"><p>Saphire</p></div>
+      <div><img src="images/mapminerals/seraphinite.jpg" alt="Seraphinite"><p>Seraphinite</p></div>
+      <div><img src="images/mapminerals/serpentine.jpg" alt="Serpentine"><p>Serpentine</p></div>
+      <div><img src="images/mapminerals/spinel.jpg" alt="Spinel"><p>Spinel</p></div>
+      <div><img src="images/mapminerals/sulfer.jpg" alt="Sulfer"><p>Sulfer</p></div>
+      <div><img src="images/mapminerals/topaz.jpg" alt="Topaz"><p>Topaz</p></div>
+      <div><img src="images/mapminerals/tourmaline.jpg" alt="Tourmaline"><p>Tourmaline</p></div>
+      <div><img src="images/mapminerals/tungsten.jpg" alt="Tungsten"><p>Tungsten</p></div>
+      <div><img src="images/mapminerals/turquoise.jpg" alt="Turquoise"><p>Turquoise</p></div>
+      <div><img src="images/mapminerals/uranium.jpg" alt="Uranium"><p>Uranium</p></div>
+      <div><img src="images/mapminerals/zinc.jpg" alt="Zinc"><p>Zinc</p></div>
+    </div>
+  </div>
+<!-- australia map and minerals -->
+  <div class="row continent australia">
+    <h5 class="slideclose"><a href="#">close</a></h5>
+    <div class="six columns contmap">
+      <img src="images/maps/australia.jpg" alt="australia map">
+    </div>
+    <div class="six columns mineralpics">
+      <div style="display: inline-block;"><img src="images/mapminerals/aluminum.jpg" alt="Aluminum"><p>Aluminum</p></div>
+      <div><img src="images/mapminerals/bauxite.jpg" alt="Bauxite"><p>Bauxite</p></div>
+      <div><img src="images/mapminerals/chromium.jpg" alt="Chromium"><p>Chromium</p></div>
+      <div><img src="images/mapminerals/coal.jpg" alt="Coal"><p>Coal</p></div>
+      <div><img src="images/mapminerals/cobalt.jpg" alt="Cobalt"><p>Cobalt</p></div>
+      <div><img src="images/mapminerals/copper.jpg" alt="Copper"><p>Copper</p></div>
+      <div><img src="images/mapminerals/diamond.jpg" alt="Diamond"><p>Diamond</p></div>
+      <div><img src="images/mapminerals/fluorite.jpg" alt="Fluorite"><p>Fluorite</p></div>
+      <div><img src="images/mapminerals/gold.jpg" alt="Gold"><p>Gold</p></div>
+      <div><img src="images/mapminerals/ilmenite.jpg" alt="Ilmenite"><p>Ilmenite</p></div>
+      <div><img src="images/mapminerals/iron.jpg" alt="Iron"><p>Iron</p></div>
+      <div><img src="images/mapminerals/lead.jpg" alt="Lead"><p>Lead</p></div>
+      <div><img src="images/mapminerals/lithium.jpg" alt="Lithium"><p>Lithium</p></div>
+      <div><img src="images/mapminerals/magnesite.jpg" alt="Magnesite"><p>Magnesite</p></div>
+      <div><img src="images/mapminerals/manganese.jpg" alt="Manganese"><p>Manganese</p></div>
+      <div><img src="images/mapminerals/molybdenum.jpg" alt="Molybdenum"><p>Molybdenum</p></div>
+      <div><img src="images/mapminerals/nickel.jpg" alt="Nickel"><p>Nickel</p></div>
+      <div><img src="images/mapminerals/niobium.jpg" alt="Niobium"><p>Niobium</p></div>
+      <div><img src="images/mapminerals/phosphate.jpg" alt="Phosphate"><p>Phosphate</p></div>
+      <div><img src="images/mapminerals/potash.jpg" alt="Potash"><p>Potash</p></div>
+      <div><img src="images/mapminerals/rutil.jpg" alt="Rutil"><p>Rutil</p></div>
+      <div><img src="images/mapminerals/silver.jpg" alt="Silver"><p>Silver</p></div>
+      <div><img src="images/mapminerals/tantalum.jpg" alt="Tantalum"><p>Tantalum</p></div>
+      <div><img src="images/mapminerals/thorium.jpg" alt="Thorium"><p>Thorium</p></div>
+      <div><img src="images/mapminerals/tungsten.jpg" alt="Tungsten"><p>Tungsten</p></div>
+      <div><img src="images/mapminerals/uranium.jpg" alt="Uranium"><p>Uranium</p></div>
+      <div><img src="images/mapminerals/vanadium.jpg" alt="Vanadium"><p>Vanadium</p></div>
+      <div><img src="images/mapminerals/zinc.jpg" alt="Zinc"><p>Zinc</p></div>
+      <div><img src="images/mapminerals/Zircon.jpg" alt="Zircon"><p>Zircon</p></div>
+    </div>
+  </div>
+
+  <div id="footer"></div>
+  <div class="avgrund-overlay "></div>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- local JS -->
+  <script src="js/script_origin.js"></script>
+  <script>$(document).ready(function(){
+    $('#header').load('header.html');
+  });</script>
+
+</body>
+
+</html>

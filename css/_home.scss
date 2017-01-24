@@ -1,0 +1,408 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+}
+
+.home-bg-img {
+  width: 100%;
+  height: 630px;
+  .background {
+    position: relative;
+    z-index: -100;
+    li {
+      img {
+        width: 100%;
+        height: 630px;
+      }
+    }
+  }
+}
+
+.unslider {
+  height: 630px;
+  overflow: inherit;
+}
+
+.home-hero-title {
+  margin: 0 auto;
+  padding: 2%;
+  color: #231f20;
+  background-color: rgba(255, 255, 255, .5);
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  .title {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+    color: #231f20;
+  }
+  hr, p {
+    margin: 0;
+    text-align: center;
+  }
+  hr {
+    border: 1px solid #231f20;
+  }
+  .dates{
+    font-weight: 600;
+    font-size: 20px;
+    color: #231f20;
+  }
+}
+
+.about {
+  background-color: #eaebec;
+  overflow: hidden;
+  .about-img {
+    margin: 13% 0;
+    margin-left: 25%;
+    img {
+      height: 160px;
+      width: 160px;
+    }
+  }
+  .about-text {
+    margin: 8% 0;
+    margin-right: 15%;
+    margin-left: 5%;
+    position: relative;
+    h1::after{
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -10;
+      height: 0px;
+      width: 90%;
+      background-color: $purple;
+      transition: height .3s;
+      content: "";
+    }
+    h1:hover{
+      color: $purple;
+    }
+    h1:hover::after{
+      height: 7px;
+    }
+  }
+}
+
+.origin {
+  background-color: white;
+    .origin-text {
+      margin: 8% 0;
+      margin-left: 18%;
+      margin-right: 7%;
+      position: relative;
+      h1::after{
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -10;
+        height: 0px;
+        width: 29%;
+        background-color: $purple;
+        transition: height .3s;
+        content: "";
+      }
+      h1:hover{
+        color: $purple;
+      }
+      h1:hover::after{
+        height: 7px;
+      }
+    }
+  .col-right{
+      margin-left: 1%;
+      .origin-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 60px;
+        padding-top: 100px;
+        padding-right: 100px;
+        img {
+          border: 1px solid #eaebec;
+        }
+      }
+    }
+}
+
+.unearthing {
+  background-color: #eaebec;
+  .unearthing-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    padding-right: 0;
+    padding-left: 100px;
+    padding-top: 115px;
+  }
+  .unearthing-text {
+    margin: 8% 0;
+    margin-right: 17%;
+    margin-left: 5%;
+    position: relative;
+    h1::after{
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -10;
+      height: 0px;
+      width: 53%;
+      background-color: $purple;
+      transition: height .3s;
+      content: "";
+    }
+    h1:hover{
+      color: $purple;
+    }
+    h1:hover::after{
+      height: 7px;
+    }
+  }
+}
+
+.treasures {
+  background-color: white;
+    .treasures-text {
+      margin: 8% 0;
+      margin-left: 18%;
+      margin-right: 5%;
+      position: relative;
+      h1::after{
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -10;
+        height: 0px;
+        width: 49%;
+        background-color: $purple;
+        transition: height .3s;
+        content: "";
+      }
+      h1:hover{
+        color: $purple;
+      }
+      h1:hover::after{
+        height: 7px;
+      }
+    }
+  .treasures-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    padding-left: 0;
+    padding-right: 100px;
+    img {
+      border: 1px solid #eaebec;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+  .home-hero-title {
+    left: 0;
+    top: 50%;
+    .title {
+      font-size: 40px;
+      font-weight: 600;
+    }
+    .dates{
+      font-weight: 600;
+    }
+  }
+
+  .about {
+    .about-img {
+      margin: 5% 0;
+      margin-top: 10%;
+      margin-left: 20%;
+      img {
+        height: 120px;
+        width: 120px;
+      }
+    }
+    .about-text {
+      margin: 5% 10%;
+      h1::after{
+        width: 96%;
+      }
+      .about-title {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .origin {
+      .origin-text {
+        margin: 8% 10%;
+        h1::after{
+          width: 29%;
+          background-color: $purple;
+          transition: height .3s;
+          content: "";
+        }
+        .origin-title {
+          font-size: 30px;
+        }
+      }
+    .col-right{
+      margin-left: 1%;
+      .origin-img {
+        padding: 30px;
+        padding-top: 140px;
+        padding-right: 50px;
+        img {
+          height:250px;
+          width: 300px;
+        }
+      }
+    }
+  }
+
+  .unearthing {
+    .unearthing-img {
+      margin-left: 20%;
+        padding: 30px;
+        padding-top: 150px;
+        img {
+          height:250px;
+          width: 300px;
+        }
+    }
+    .unearthing-text {
+      margin: 8% 10%;
+      margin-left: 15%;
+      h1::after{
+        width: 55%;
+      }
+      .unearth-title {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .treasures {
+      .treasures-text {
+        margin: 8% 10%;
+        h1::after{
+          width: 50%;
+        }
+        .treasures-title {
+          font-size: 30px;
+        }
+      }
+    .treasures-img {
+      margin-left: 1%;
+      // margin-right: 2%;
+        padding: 30px;
+        padding-top: 100px;
+        padding-right: 50px;
+        img {
+          height:250px;
+          width: 300px;
+        }
+    }
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .home-hero-title {
+    width: 100%;
+    left: 0;
+    top: 50%;
+    .title {
+      font-size: 40px;
+      font-weight: 600;
+    }
+    .dates{
+      font-weight: 600;
+    }
+  }
+
+  .col-size, .unearthing-column, .origin-column, .about-column{
+    width: 100%;
+  }
+
+  .about {
+    .about-img {
+      margin: 5% 0;
+      margin-top: 10%;
+      margin-left: 20%;
+      img {
+        height: 120px;
+        width: 120px;
+      }
+    }
+    .about-text {
+      margin: 5% 10%;
+      h1::after{
+        width: 96%;
+      }
+      .about-title {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .origin {
+      .origin-text {
+        margin: 8% 10%;
+        h1::after{
+          width: 29%;
+          background-color: $purple;
+          transition: height .3s;
+          content: "";
+        }
+        .origin-title {
+          font-size: 30px;
+        }
+      }
+    .col-right{
+      display: none;
+      }
+  }
+
+  .unearthing {
+    .unearthing-img {
+      display: none;
+    }
+    .unearthing-text {
+      margin: 8% 10%;
+      h1::after{
+        width: 55%;
+      }
+      .unearth-title {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .treasures {
+      .treasures-text {
+        margin: 8% 10%;
+        h1::after{
+          width: 50%;
+        }
+        .treasures-title {
+          font-size: 30px;
+        }
+      }
+    .treasures-img {
+        display: none;
+      }
+    }
+}
